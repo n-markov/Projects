@@ -62,4 +62,4 @@ class SavingsAccount(InterestRewardsAccount):
             print("\nWithdrawal Complete.")
             print(self.getBalance())
         except BalanceException as error:
-            print(f"Withdrawal interrupted: {error}")   
+            print(f"Withdrawal interrupted: {error}")  
