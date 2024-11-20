@@ -19,7 +19,7 @@ class BankAccount():
         print(f"\nDeposit of {locale.currency(amount, grouping=True)} complete")
         print(self.getBalance())
     
-    def viableTransaction(self, amount):
+    def sufficentFunds(self, amount):
         if self.balance >= amount:
             return
         else:
@@ -27,7 +27,7 @@ class BankAccount():
         
     def withdraw(self, amount):
         try:
-            self.viableTransaction(amount)
+            self.sufficentFunds(amount)
             self.balance -= amount
             print("\nWithdraw complete")
             print(self.getBalance())
